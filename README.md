@@ -4,9 +4,9 @@ A timer with animations.
 
 ## Features
 
--
--
--
+- displays a timer
+- shows an animated border around the timer
+- allows user to change timer value
 
 ## Technologies used
 
