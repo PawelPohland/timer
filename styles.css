@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.timer {
+  position: relative;
+}
+
+.timer .controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer input {
+  background-color: transparent;
+  border: none;
+  width: 11rem;
+  margin-left: 1rem;
+  text-align: center;
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 4rem;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.timer .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer button:hover {
+  color: #f58402;
+}
+
+#timer-svg {
+  width: 400px;
+  height: 400px;
+}
