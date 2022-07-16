@@ -1,5 +1,11 @@
 "use strict";
 
+// TODO:
+// - pause button is not needed - if user presses start button when timer
+// is working than the button can be replaced with pause button (functionality)
+
+// - add border around circle animation (slot)
+
 class Timer {
   constructor(durationInput, startButton, pauseButton, callbacks) {
     this.durationInput = durationInput;

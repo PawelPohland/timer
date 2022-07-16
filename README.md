@@ -18,10 +18,7 @@ A timer with animations.
 ## Credits:
 
 - Google Fonts - [Edu SA Beginner](https://fonts.google.com/specimen/Edu+SA+Beginner)
-- FontAwesome icons:
-
-_[circle-play](https://fontawesome.com/icons/circle-play?s=solid)
-_[circle-pause](https://fontawesome.com/icons/circle-pause?s=solid)
+- FontAwesome icons: [circle-play](https://fontawesome.com/icons/circle-play?s=solid), [circle-pause](https://fontawesome.com/icons/circle-pause?s=solid)
 
 ## Preview
 
