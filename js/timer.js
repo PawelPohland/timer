@@ -1,16 +1,9 @@
 "use strict";
 
-// TODO:
-// - pause button is not needed - if user presses start button when timer
-// is working than the button can be replaced with pause button (functionality)
-
-// - add border around circle animation (slot)
-
 class Timer {
-  constructor(durationInput, startButton, pauseButton, callbacks) {
+  constructor(durationInput, startButton, callbacks) {
     this.durationInput = durationInput;
     this.startButton = startButton;
-    this.pauseButton = pauseButton;
 
     this.isWorking = false;
 
@@ -24,17 +17,30 @@ class Timer {
     }
 
     this.startButton.addEventListener("click", this.start);
-    this.pauseButton.addEventListener("click", this.pause);
+  }
+
+  toggleStartPauseButton() {
+    this.startButton
+      .querySelector(".fa-circle-play")
+      .classList.toggle("hidden");
+    this.startButton
+      .querySelector(".fa-circle-pause")
+      .classList.toggle("hidden");
   }
 
   // starts the timer
   start = () => {
     if (this.isWorking) {
       this.pause();
+      // change pause icon to play icon
+      this.toggleStartPauseButton();
       return;
     }
 
     this.isWorking = true;
+
+    // change play icon to pause icon
+    this.toggleStartPauseButton();
 
     if (this.onStart) {
       this.onStart(this.timeRemaining);

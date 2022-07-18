@@ -7,7 +7,7 @@ const pauseButton = document.getElementById("timer-pause");
 const circle = document.querySelector("#timer-svg circle");
 const animCircle = new AnimCircle(circle, AnimCircle.clockwise);
 
-const timer = new Timer(durationInput, startButton, pauseButton, {
+const timer = new Timer(durationInput, startButton, {
   onStart(totalDuration) {
     console.log("Timer has started!");
     animCircle.reset(totalDuration);

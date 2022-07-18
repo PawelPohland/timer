@@ -5,7 +5,8 @@ A timer with animations.
 ## Features
 
 - displays a timer
-- allows user to change timer value
+- user can start/pause the timer
+- user can change timer's value
 - draws an animated border around the timer
 
 ## Technologies used
